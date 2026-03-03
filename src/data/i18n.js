@@ -2,7 +2,7 @@
 const translations = {
     ru: {
         // Main Menu
-        'menu.title': 'Vim Hero',
+        'menu.title': 'Vim Odyssey',
         'menu.subtitle': 'Приключение в мире Vim',
         'menu.begin': 'Начать приключение',
         'menu.continue': 'Продолжить',
@@ -161,7 +161,7 @@ const translations = {
         'challenge.temple-2.story': 'Надпись храма повреждена. Восстанови её...',
         'challenge.temple-3.title': 'Финальное испытание',
         'challenge.temple-3.desc': 'Пройди финальное испытание Vim!',
-        'challenge.temple-3.story': 'Вот и он — финальный вызов. Покажи, что ты истинный Vim Hero!',
+        'challenge.temple-3.story': 'Вот и он — финальный вызов. Покажи, что ты истинный Vim Odyssey герой!',
 
         // Advanced world names
         'world.insert-mastery': 'Мастерство вставки',
@@ -326,7 +326,7 @@ const translations = {
 
     en: {
         // Main Menu
-        'menu.title': 'Vim Hero',
+        'menu.title': 'Vim Odyssey',
         'menu.subtitle': 'An Adventure in Vim Mastery',
         'menu.begin': 'Begin Adventure',
         'menu.continue': 'Continue Adventure',
@@ -485,7 +485,7 @@ const translations = {
         'challenge.temple-2.story': 'The temple inscription is corrupted. Restore it with editing mastery...',
         'challenge.temple-3.title': 'The Final Challenge',
         'challenge.temple-3.desc': 'Complete the ultimate Vim trial!',
-        'challenge.temple-3.story': 'This is it — the final challenge. Show that you are a true Vim Hero!',
+        'challenge.temple-3.story': 'This is it — the final challenge. Show that you are a true Vim Odyssey player!',
 
         // Advanced world names
         'world.insert-mastery': 'Insert Mastery',

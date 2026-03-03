@@ -4,6 +4,7 @@ import { useLocale } from '../hooks/useLocale';
 import { ALL_WORLDS } from '../data/levels';
 import { createVimState, processKeystroke } from '../engine/vimEngine';
 import { checkGoals, calculateStars } from '../engine/goalChecker';
+import { audioEngine } from '../engine/audioEngine';
 import VimEditor from './VimEditor';
 
 function GameScreen() {
@@ -77,10 +78,18 @@ function GameScreen() {
         const newState = processKeystroke(vimState, key, challenge.allowedKeys);
         setVimState(newState);
 
+        // Play click sound for any valid registered keystroke
+        if (newState !== vimState) {
+            audioEngine.playKeystroke();
+        } else {
+            audioEngine.playError();
+        }
+
         // Check goals
         if (newState.mode !== 'insert') {
             const result = checkGoals(newState, challenge.goals, currentGoalIndex);
             if (result.goalAdvanced) {
+                audioEngine.playSuccess();
                 if (result.completed) {
                     setCompleted(true);
                     const stars = calculateStars(newState.keystrokeCount, challenge.maxKeystrokes);
@@ -96,6 +105,7 @@ function GameScreen() {
             challenge.goals[currentGoalIndex]?.type === 'text_content') {
             const result = checkGoals(newState, challenge.goals, currentGoalIndex);
             if (result.goalAdvanced) {
+                audioEngine.playSuccess();
                 if (result.completed) {
                     setCompleted(true);
                     const stars = calculateStars(newState.keystrokeCount, challenge.maxKeystrokes);

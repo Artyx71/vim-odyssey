@@ -3,7 +3,7 @@ import translations from '../data/i18n';
 
 const LocaleContext = createContext(null);
 
-const LOCALE_KEY = 'vim-hero-locale';
+const LOCALE_KEY = 'vim-odyssey-locale';
 
 export function LocaleProvider({ children }) {
     const [locale, setLocale] = useState(() => {

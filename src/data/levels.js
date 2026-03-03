@@ -619,7 +619,7 @@ export const WORLDS = [
                     '  Step 2: Jump to "second marker ★"',
                     '  Step 3: Find the X at this line\'s end',
                     '',
-                    '    Congratulations, Vim Hero! ★',
+                    '    Congratulations, Vim Odyssey Player! ★',
                 ],
                 cursorStart: { line: 0, col: 4 },
                 goals: [
@@ -630,7 +630,7 @@ export const WORLDS = [
                 allowedKeys: ['h', 'j', 'k', 'l', 'w', 'b', 'e', '0', '$', '^', 'f', 't', 'gg', 'G'],
                 hints: ['Use everything you have learned!', 'Combine motions for maximum efficiency'],
                 maxKeystrokes: { three: 12, two: 20, one: 30 },
-                storyText: 'This is it — the final challenge. Show that you are a true Vim Hero!',
+                storyText: 'This is it — the final challenge. Show that you are a true Vim Odyssey player!',
             },
         ],
     },

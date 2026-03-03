@@ -3,13 +3,18 @@ import { WORLDS, ADVANCED_WORLDS, ALL_WORLDS } from '../data/levels';
 
 const GameContext = createContext(null);
 
-const STORAGE_KEY = 'vim-hero-save';
+const STORAGE_KEY = 'vim-odyssey-save';
 
 function getInitialState() {
     try {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (saved) {
-            return JSON.parse(saved);
+            const parsed = JSON.parse(saved);
+            return {
+                theme: 'default',
+                sfxEnabled: true,
+                ...parsed
+            };
         }
     } catch (e) { /* ignore */ }
 
@@ -22,6 +27,8 @@ function getInitialState() {
         // First world is always unlocked
         unlockedWorlds: ['enchanted-forest'],
         totalStars: 0,
+        theme: 'default',
+        sfxEnabled: true,
     };
 }
 
@@ -113,6 +120,12 @@ function reducer(state, action) {
         case 'RESET_PROGRESS':
             localStorage.removeItem(STORAGE_KEY);
             return getInitialState();
+
+        case 'SET_THEME':
+            return { ...state, theme: action.theme };
+
+        case 'TOGGLE_SFX':
+            return { ...state, sfxEnabled: !state.sfxEnabled };
 
         default:
             return state;

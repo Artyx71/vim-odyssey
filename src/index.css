@@ -52,6 +52,76 @@
   --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
+/* ─── Themes ─── */
+html.theme-dracula {
+  --bg-primary: #282a36;
+  --bg-secondary: #44475a;
+  --bg-card: #282a36;
+  --bg-card-hover: #44475a;
+  --bg-overlay: rgba(40, 42, 54, 0.92);
+
+  --gold: #ff79c6;
+  --gold-bright: #ff92d0;
+  --gold-dim: #bd93f9;
+  --emerald: #50fa7b;
+  --emerald-dim: #2e8b57;
+  --ruby: #ff5555;
+  --sapphire: #8be9fd;
+  --amethyst: #bd93f9;
+  --amber: #f1fa8c;
+
+  --text-primary: #f8f8f2;
+  --text-secondary: #6272a4;
+  --text-muted: #6272a4;
+  --text-gold: #ff79c6;
+}
+
+html.theme-gruvbox {
+  --bg-primary: #282828;
+  --bg-secondary: #3c3836;
+  --bg-card: #3c3836;
+  --bg-card-hover: #504945;
+  --bg-overlay: rgba(40, 40, 40, 0.92);
+
+  --gold: #fabd2f;
+  --gold-bright: #fe8019;
+  --gold-dim: #d79921;
+  --emerald: #b8bb26;
+  --emerald-dim: #98971a;
+  --ruby: #cc241d;
+  --sapphire: #83a598;
+  --amethyst: #d3869b;
+  --amber: #fabd2f;
+
+  --text-primary: #ebdbb2;
+  --text-secondary: #a89984;
+  --text-muted: #928374;
+  --text-gold: #fabd2f;
+}
+
+html.theme-nord {
+  --bg-primary: #2e3440;
+  --bg-secondary: #3b4252;
+  --bg-card: #3b4252;
+  --bg-card-hover: #434c5e;
+  --bg-overlay: rgba(46, 52, 64, 0.92);
+
+  --gold: #ebcb8b;
+  --gold-bright: #d08770;
+  --gold-dim: #b48ead;
+  --emerald: #a3be8c;
+  --emerald-dim: #8fbcbb;
+  --ruby: #bf616a;
+  --sapphire: #81a1c1;
+  --amethyst: #b48ead;
+  --amber: #ebcb8b;
+
+  --text-primary: #d8dee9;
+  --text-secondary: #e5e9f0;
+  --text-muted: #4c566a;
+  --text-gold: #ebcb8b;
+}
+
 /* ─── Reset & Base ─── */
 *,
 *::before,

@@ -22,14 +22,35 @@ function MainMenu() {
         <div className="main-menu">
             <Particles />
 
-            {/* Language toggle */}
-            <button
-                className="lang-toggle"
-                onClick={toggleLocale}
-                title="Switch language"
-            >
-                {t('lang.switch')}
-            </button>
+            {/* Settings controls */}
+            <div style={{ position: 'absolute', top: 20, right: 32, display: 'flex', gap: 12, alignItems: 'center', zIndex: 10 }}>
+                <button
+                    className="lang-toggle"
+                    onClick={() => dispatch({ type: 'TOGGLE_SFX' })}
+                    title="Toggle Sound"
+                >
+                    {state.sfxEnabled ? '🔊' : '🔇'}
+                </button>
+                <select
+                    className="lang-toggle"
+                    style={{ appearance: 'none', cursor: 'pointer' }}
+                    value={state.theme}
+                    onChange={(e) => dispatch({ type: 'SET_THEME', theme: e.target.value })}
+                    title="Theme"
+                >
+                    <option value="default">🌙 Adventure</option>
+                    {state.totalStars >= 10 ? <option value="dracula">🦇 Dracula</option> : <option disabled>🦇 Dracula (10⭐)</option>}
+                    {state.totalStars >= 20 ? <option value="gruvbox">📦 Gruvbox</option> : <option disabled>📦 Gruvbox (20⭐)</option>}
+                    {state.totalStars >= 30 ? <option value="nord">❄️ Nord</option> : <option disabled>❄️ Nord (30⭐)</option>}
+                </select>
+                <button
+                    className="lang-toggle"
+                    onClick={toggleLocale}
+                    title="Switch language"
+                >
+                    {t('lang.switch')}
+                </button>
+            </div>
 
             <div className="menu-logo">
                 <span className="menu-icon">⚔️</span>

@@ -1,8 +1,8 @@
-# ⚔️ Vim Hero
+# ⚔️ Vim Odyssey
 
 *[Русская версия](README.md)*
 
-**Vim Hero** is an interactive web game designed for learning and practicing Vim editor commands. The project turns the mastery of this powerful text editor into an engaging journey through worlds of increasing difficulty.
+**Vim Odyssey** is an interactive web game designed for learning and practicing Vim editor commands. The project turns the mastery of this powerful text editor into an engaging journey through worlds of increasing difficulty.
 
 ## 🚀 Features
 
@@ -36,8 +36,8 @@ Make sure you have [Node.js](https://nodejs.org/) installed (version 18+ recomme
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/vim-hero.git
-   cd vim-hero
+   git clone https://github.com/your-username/vim-odyssey.git
+   cd vim-odyssey
    ```
 
 2. Install dependencies:

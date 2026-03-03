@@ -20,7 +20,7 @@ function VimEditor({ lines, cursor, mode, goalPositions, currentGoalIndex }) {
                 <span className="vim-editor-dot" />
                 <span className="vim-editor-dot" />
                 <span className="vim-editor-dot" />
-                <span>vim-hero</span>
+                <span>vim-odyssey</span>
                 <span className={`vim-editor-mode ${mode === 'insert' ? 'mode-insert' : 'mode-normal'}`}>
                     {mode === 'insert' ? '-- INSERT --' : 'NORMAL'}
                 </span>
