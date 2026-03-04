@@ -36,7 +36,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed (version 18+ recomme
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/vim-odyssey.git
+   git clone https://github.com/Artyx71/vim-odyssey.git
    cd vim-odyssey
    ```
 
