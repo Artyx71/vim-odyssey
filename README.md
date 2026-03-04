@@ -36,7 +36,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/your-username/vim-odyssey.git
+   git clone https://github.com/Artyx71/vim-odyssey.git
    cd vim-odyssey
    ```
 
